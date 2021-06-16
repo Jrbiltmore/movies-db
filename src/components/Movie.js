@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Movie = () => {
+const Movie = ({ id, name, desc, release, image }) => {
   return (
-    <div>
-      <h2>Movie component</h2>
-    </div>
+    <article className="movie">
+      <div className="img">
+        <img src={image} alt={name}></img>
+      </div>
+      <div className="movie-footer">
+        <h3>{name}</h3>
+        <p>{desc}</p>
+        <h5>Release Data: {release}</h5>
+      </div>
+    </article>
   );
 };
 

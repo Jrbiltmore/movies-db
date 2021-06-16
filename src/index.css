@@ -194,7 +194,7 @@ Error
 }
 /* 
 ====== 
-Cocktails List 
+Movies List 
 ======
 */
 
@@ -209,7 +209,7 @@ Cocktails List
   margin-bottom: 3.5rem;
   margin-top: 1rem;
 }
-.cocktails-center {
+.movies-center {
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--fullWidth);
@@ -219,17 +219,17 @@ Cocktails List
   /* align-items: start; */
 }
 @media screen and (min-width: 576px) {
-  .cocktails-center {
+  .movies-center {
     grid-template-columns: repeat(auto-fill, minmax(338.8px, 1fr));
   }
 }
 /* 
 ====== 
-Cocktail 
+Movie 
 ======
 */
 
-.cocktail {
+.movie {
   background: var(--mainWhite);
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
@@ -238,27 +238,27 @@ Cocktail
   grid-template-rows: auto 1fr;
   border-radius: var(--mainBorderRadius);
 }
-.cocktail:hover {
+.movie:hover {
   box-shadow: var(--darkShadow);
 }
-.cocktail img {
-  height: 20rem;
+.movie img {
+  height: 40rem;
   object-fit: cover;
   border-top-left-radius: var(--mainBorderRadius);
   border-top-right-radius: var(--mainBorderRadius);
 }
-.cocktail-footer {
+.movie-footer {
   padding: 1.5rem;
 }
-.cocktail-footer h3,
-.cocktail-footer h4,
-.cocktail-footer p {
+.movie-footer h3,
+.movie-footer h4,
+.movie-footer p {
   margin-bottom: 0.3rem;
 }
-.cocktail-footer h3 {
+.movie-footer h3 {
   font-size: 2rem;
 }
-.cocktail-footer p {
+.movie-footer p {
   color: var(--darkGrey);
   margin-bottom: 0.5rem;
 }
@@ -301,11 +301,11 @@ Form
 }
 /* 
 ====== 
-Cocktail
+Movie
 ======
 */
 
-.cocktail-section {
+.movie-section {
   text-align: center;
 }
 .drink {
