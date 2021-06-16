@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const [movie, setMovie] = useState([]);
 
   return (
-    <AppContext.Provider value={(loading, searchTerm, movie, setSearchTerm)}>
+    <AppContext.Provider value={{ loading, movie, setSearchTerm }}>
       {children}
     </AppContext.Provider>
   );
