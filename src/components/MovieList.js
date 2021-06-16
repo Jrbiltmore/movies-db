@@ -1,9 +1,9 @@
 import React from "react";
-import Cocktail from "./Cocktail";
+import Cocktail from "./Movie";
 import Loading from "./Loading";
 import { useGlobalContext } from "../context";
 
-const CocktailList = () => {
+const MovieList = () => {
   return (
     <div>
       <h2>Movie list component</h2>
