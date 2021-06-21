@@ -17,7 +17,8 @@ const SingleMovie = () => {
       try {
         const response = await fetch(`${url}${id}`);
         const data = await response.json();
-        //const imageUrl = `${imgUrl}${poster_path}`;
+
+        // For image End
         if (data.items) {
           const {
             title: name,
@@ -25,7 +26,8 @@ const SingleMovie = () => {
             popularity: pop,
             release_date: release,
             original_language: lang,
-            poster_path: image,
+            poster_path,
+            image = `${imgUrl}${poster_path}`,
           } = data.items[2];
           const newMovie = {
             name,
