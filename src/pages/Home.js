@@ -5,7 +5,7 @@ import SearchForm from "../components/SearchForm";
 const Home = () => {
   return (
     <main>
-      <SearchForm></SearchForm>
+      {/* <SearchForm></SearchForm> */}
       <MovieList></MovieList>
     </main>
   );
