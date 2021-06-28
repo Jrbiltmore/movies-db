@@ -18,7 +18,6 @@ const SingleMovie = () => {
           `https://api.themoviedb.org/3/movie/${id}?api_key=af25738eca771b7b43d18ad260807848&language=en-US`
         );
         const data = await response.json();
-        console.log(data);
 
         // For image End
         if (data) {
@@ -71,7 +70,7 @@ const SingleMovie = () => {
       <Link to="/" className="btn btn-primary">
         Back Home
       </Link>
-      <h2 className="section-title">{name}</h2>
+      <div className="section-title"></div>
       <div className="drink">
         <img src={image} alt={name}></img>
         <div className="drink-info">
@@ -93,9 +92,11 @@ const SingleMovie = () => {
           <p>
             <span className="drink-data">Release Date: </span> {release}
           </p>
-          <Link to={imdb_url} className="btn btn-primary btn-details">
-            IMDB
-          </Link>
+          <p>
+            <a href={imdb_url} className="btn btn-primary">
+              IMDB
+            </a>
+          </p>
         </div>
       </div>
     </section>

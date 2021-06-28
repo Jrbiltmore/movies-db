@@ -1,11 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
 import { useCallback } from "react";
 
-const movieId = 157336;
-
 // const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=af25738eca771b7b43d18ad260807848&append_to_response=`;
 const url =
   "https://api.themoviedb.org/3/list/1?api_key=af25738eca771b7b43d18ad260807848&language=en-US";
+
 const AppContext = React.createContext();
 
 const AppProvider = ({ children }) => {
@@ -49,7 +48,7 @@ const AppProvider = ({ children }) => {
   }, [searchTerm]);
 
   return (
-    <AppContext.Provider value={{ loading, movie, setSearchTerm }}>
+    <AppContext.Provider value={{ loading, movie, searchTerm, setSearchTerm }}>
       {children}
     </AppContext.Provider>
   );

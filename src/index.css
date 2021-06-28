@@ -318,6 +318,8 @@ Movie
 }
 .drink img {
   border-radius: var(--mainBorderRadius);
+  height: 28rem;
+  object-fit: contain;
 }
 .drink p {
   font-weight: bold;
