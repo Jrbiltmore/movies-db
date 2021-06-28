@@ -5,7 +5,6 @@ import { useGlobalContext } from "../context";
 
 const MovieList = () => {
   const { movie, loading } = useGlobalContext();
-  console.log(movie);
 
   if (loading) {
     return <Loading></Loading>;
@@ -16,7 +15,7 @@ const MovieList = () => {
 
   return (
     <section className="section">
-      <h2 className="section-title">Movies</h2>
+      <h2 className="section-title">Marvel Movies</h2>
       <div className="movies-center">
         {movie.map((item) => {
           return <Movie key={item.id} {...item}></Movie>;
