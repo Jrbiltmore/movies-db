@@ -7,7 +7,7 @@ React Movies Database App. The list contain Marvel movies collection with all th
 ## Preview
 
 <p float="left">
- <img src="1.PNG">
-<img src="2.PNG">
-<img src="3.PNG">
+ <img src="src/1.PNG">
+<img src="src/2.PNG">
+<img src="src/3.PNG">
 </p>
